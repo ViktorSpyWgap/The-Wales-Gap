@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Wales Gap - Understanding how inequality affects young people in Wales">
+  <title>The Wales Gap - Understanding Inequality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Animated Background Blobs -->
+  <div class="theme-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Skip Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-icon">TW</div>
+        <span lang="en">The Wales Gap</span>
+        <span lang="cy">Bwlch Cymru</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__link active">
+          <span lang="en">Home</span>
+          <span lang="cy">Hafan</span>
+        </a>
+        <a href="problem.html" class="nav__link">
+          <span lang="en">The Problem</span>
+          <span lang="cy">Y Broblem</span>
+        </a>
+        <a href="research.html" class="nav__link">
+          <span lang="en">Research</span>
+          <span lang="cy">Ymchwil</span>
+        </a>
+        <a href="local-impact.html" class="nav__link">
+          <span lang="en">Local Impact</span>
+          <span lang="cy">Effaith Leol</span>
+        </a>
+        <a href="take-action.html" class="nav__link">
+          <span lang="en">Take Action</span>
+          <span lang="cy">Gweithredu</span>
+        </a>
+        <a href="resources.html" class="nav__link">
+          <span lang="en">Resources</span>
+          <span lang="cy">Adnoddau</span>
+        </a>
+        <a href="quiz.html" class="btn btn--primary">
+          <span lang="en">Take Quiz</span>
+          <span lang="cy">Cwis</span>
+        </a>
+      </nav>
+
+      <!-- Header Controls -->
+      <div class="header__controls">
+        <!-- Language Toggle -->
+        <div class="lang-toggle">
+          <button type="button" class="lang-toggle__btn active" data-lang="en" aria-label="Switch to English">EN</button>
+          <button type="button" class="lang-toggle__btn" data-lang="cy" aria-label="Switch to Welsh">CY</button>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="btn-icon menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <line x1="3" y1="12" x2="21" y2="12"/>
+            <line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav__link active">
+      <span lang="en">Home</span>
+      <span lang="cy">Hafan</span>
+    </a>
+    <a href="problem.html" class="mobile-nav__link">
+      <span lang="en">The Problem</span>
+      <span lang="cy">Y Broblem</span>
+    </a>
+    <a href="research.html" class="mobile-nav__link">
+      <span lang="en">Research</span>
+      <span lang="cy">Ymchwil</span>
+    </a>
+    <a href="local-impact.html" class="mobile-nav__link">
+      <span lang="en">Local Impact</span>
+      <span lang="cy">Effaith Leol</span>
+    </a>
+    <a href="take-action.html" class="mobile-nav__link">
+      <span lang="en">Take Action</span>
+      <span lang="cy">Gweithredu</span>
+    </a>
+    <a href="resources.html" class="mobile-nav__link">
+      <span lang="en">Resources</span>
+      <span lang="cy">Adnoddau</span>
+    </a>
+    <a href="quiz.html" class="mobile-nav__link">
+      <span lang="en">Take Quiz</span>
+      <span lang="cy">Cwis</span>
+    </a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero hero--centered">
+      <div class="container">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            <span lang="en">The Wales Gap</span>
+            <span lang="cy">Bwlch Cymru</span>
+          </h1>
+          <p class="hero__subtitle">
+            <span lang="en">Understanding how inequality affects young people in Wales</span>
+            <span lang="cy">Deall sut mae anghydraddoldeb yn effeithio ar bobl ifanc yng Nghymru</span>
+          </p>
+          <div class="hero__actions">
+            <a href="problem.html" class="btn btn--primary btn--large">
+              <span lang="en">Learn More</span>
+              <span lang="cy">Dysgu Mwy</span>
+            </a>
+            <a href="resources.html" class="btn btn--outline btn--large">
+              <span lang="en">Get Help</span>
+              <span lang="cy">Cael Cymorth</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Facts Section -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">
+            <span lang="en">Quick Facts</span>
+            <span lang="cy">Ffeithiau Cyflym</span>
+          </h2>
+          <p class="section__subtitle">
+            <span lang="en">The reality of inequality in Wales</span>
+            <span lang="cy">Realiti anghydraddoldeb yng Nghymru</span>
+          </p>
+        </div>
+        <div class="cards-grid cards-grid--4">
+          <div class="card stat-card">
+            <div class="stat-card__value">1 in 4</div>
+            <div class="stat-card__label">
+              <span lang="en">People in Wales live in poverty</span>
+              <span lang="cy">Pobl yng Nghymru yn byw mewn tlodi</span>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-card__value">28%</div>
+            <div class="stat-card__label">
+              <span lang="en">Of children in Wales grow up poor</span>
+              <span lang="cy">O blant yng Nghymru yn tyfu i fyny yn dlawd</span>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-card__value">72%</div>
+            <div class="stat-card__label">
+              <span lang="en">Of poor children have working parents</span>
+              <span lang="cy">O blant tlawd sydd a rhieni sy'n gweithio</span>
+            </div>
+          </div>
+          <div class="card stat-card">
+            <div class="stat-card__value">6M</div>
+            <div class="stat-card__label">
+              <span lang="en">People in UK in deep poverty</span>
+              <span lang="cy">Pobl yn y DU mewn tlodi dwfn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What You'll Find Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">
+            <span lang="en">What You'll Find Here</span>
+            <span lang="cy">Beth Gewch Chi Yma</span>
+          </h2>
+        </div>
+        <div class="cards-grid">
+          <a href="research.html" class="card card--link">
+            <div class="card__icon card__icon--primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+              </svg>
+            </div>
+            <h3 class="card__title">
+              <span lang="en">Learn the Facts</span>
+              <span lang="cy">Dysgwch y Ffeithiau</span>
+            </h3>
+            <p class="card__text">
+              <span lang="en">Understand the real statistics about inequality and how it affects Wales.</span>
+              <span lang="cy">Deall yr ystadegau go iawn am anghydraddoldeb a sut mae'n effeithio ar Gymru.</span>
+            </p>
+            <span class="card__arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="local-impact.html" class="card card--link">
+            <div class="card__icon card__icon--secondary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l5.447 2.724A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/>
+              </svg>
+            </div>
+            <h3 class="card__title">
+              <span lang="en">See Local Impact</span>
+              <span lang="cy">Gweld yr Effaith Leol</span>
+            </h3>
+            <p class="card__text">
+              <span lang="en">Discover how inequality affects communities right here in Cardiff and Wales.</span>
+              <span lang="cy">Darganfyddwch sut mae anghydraddoldeb yn effeithio ar gymunedau yma yng Nghaerdydd a Chymru.</span>
+            </p>
+            <span class="card__arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+          <a href="take-action.html" class="card card--link">
+            <div class="card__icon card__icon--primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M11 4H4a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-7"/>
+                <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">
+              <span lang="en">Take Action</span>
+              <span lang="cy">Gweithredwch</span>
+            </h3>
+            <p class="card__text">
+              <span lang="en">Find out what you can do to help make a difference in your community.</span>
+              <span lang="cy">Darganfyddwch beth allwch chi ei wneud i helpu i wneud gwahaniaeth yn eich cymuned.</span>
+            </p>
+            <span class="card__arrow">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section__title">
+            <span lang="en">Test Your Knowledge</span>
+            <span lang="cy">Profwch Eich Gwybodaeth</span>
+          </h2>
+          <p class="section__subtitle mb-8">
+            <span lang="en">Take our quiz to see how much you know about inequality in Wales</span>
+            <span lang="cy">Cymerwch ein cwis i weld faint rydych chi'n ei wybod am anghydraddoldeb yng Nghymru</span>
+          </p>
+          <a href="quiz.html" class="btn btn--primary btn--large">
+            <span lang="en">Start Quiz</span>
+            <span lang="cy">Dechrau'r Cwis</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <span lang="en">The Wales Gap</span>
+            <span lang="cy">Bwlch Cymru</span>
+          </div>
+          <p class="footer__desc">
+            <span lang="en">Understanding inequality and its effects on young people in Wales.</span>
+            <span lang="cy">Deall anghydraddoldeb a'i effeithiau ar bobl ifanc yng Nghymru.</span>
+          </p>
+        </div>
+        <div>
+          <h4 class="footer__title">
+            <span lang="en">Pages</span>
+            <span lang="cy">Tudalennau</span>
+          </h4>
+          <ul class="footer__links">
+            <li><a href="problem.html" class="footer__link">
+              <span lang="en">The Problem</span>
+              <span lang="cy">Y Broblem</span>
+            </a></li>
+            <li><a href="research.html" class="footer__link">
+              <span lang="en">Research</span>
+              <span lang="cy">Ymchwil</span>
+            </a></li>
+            <li><a href="local-impact.html" class="footer__link">
+              <span lang="en">Local Impact</span>
+              <span lang="cy">Effaith Leol</span>
+            </a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">
+            <span lang="en">Get Involved</span>
+            <span lang="cy">Cymryd Rhan</span>
+          </h4>
+          <ul class="footer__links">
+            <li><a href="take-action.html" class="footer__link">
+              <span lang="en">Take Action</span>
+              <span lang="cy">Gweithredu</span>
+            </a></li>
+            <li><a href="resources.html" class="footer__link">
+              <span lang="en">Resources</span>
+              <span lang="cy">Adnoddau</span>
+            </a></li>
+            <li><a href="quiz.html" class="footer__link">
+              <span lang="en">Quiz</span>
+              <span lang="cy">Cwis</span>
+            </a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title">
+            <span lang="en">Contact</span>
+            <span lang="cy">Cyswllt</span>
+          </h4>
+          <ul class="footer__links">
+            <li><a href="mailto:thewalesgap@gmail.com" class="footer__link">thewalesgap@gmail.com</a></li>
+            <li><a href="tel:02920220309" class="footer__link">02920 220309</a></li>
+            <li><a href="https://www.srcdc.org.uk/" class="footer__link" target="_blank" rel="noopener">SRCDC Website</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 The Wales Gap. <span lang="en">All rights reserved.</span><span lang="cy">Cedwir pob hawl.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Understanding the different types of inequality affecting Wales">
+  <title>The Problem - The Wales Gap</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Animated Background Blobs -->
+  <div class="theme-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <div class="header__logo-icon">TW</div>
+        <span lang="en">The Wales Gap</span>
+        <span lang="cy">Bwlch Cymru</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html" class="nav__link"><span lang="en">Home</span><span lang="cy">Hafan</span></a>
+        <a href="problem.html" class="nav__link active"><span lang="en">The Problem</span><span lang="cy">Y Broblem</span></a>
+        <a href="research.html" class="nav__link"><span lang="en">Research</span><span lang="cy">Ymchwil</span></a>
+        <a href="local-impact.html" class="nav__link"><span lang="en">Local Impact</span><span lang="cy">Effaith Leol</span></a>
+        <a href="take-action.html" class="nav__link"><span lang="en">Take Action</span><span lang="cy">Gweithredu</span></a>
+        <a href="resources.html" class="nav__link"><span lang="en">Resources</span><span lang="cy">Adnoddau</span></a>
+        <a href="quiz.html" class="btn btn--primary"><span lang="en">Take Quiz</span><span lang="cy">Cwis</span></a>
+      </nav>
+      <div class="header__controls">
+        <div class="lang-toggle">
+          <button type="button" class="lang-toggle__btn active" data-lang="en" aria-label="Switch to English">EN</button>
+          <button type="button" class="lang-toggle__btn" data-lang="cy" aria-label="Switch to Welsh">CY</button>
+        </div>
+        <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+          <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <button type="button" class="btn-icon menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html" class="mobile-nav__link"><span lang="en">Home</span><span lang="cy">Hafan</span></a>
+    <a href="problem.html" class="mobile-nav__link active"><span lang="en">The Problem</span><span lang="cy">Y Broblem</span></a>
+    <a href="research.html" class="mobile-nav__link"><span lang="en">Research</span><span lang="cy">Ymchwil</span></a>
+    <a href="local-impact.html" class="mobile-nav__link"><span lang="en">Local Impact</span><span lang="cy">Effaith Leol</span></a>
+    <a href="take-action.html" class="mobile-nav__link"><span lang="en">Take Action</span><span lang="cy">Gweithredu</span></a>
+    <a href="resources.html" class="mobile-nav__link"><span lang="en">Resources</span><span lang="cy">Adnoddau</span></a>
+    <a href="quiz.html" class="mobile-nav__link"><span lang="en">Take Quiz</span><span lang="cy">Cwis</span></a>
+  </nav>
+
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-header__title">
+          <span lang="en">What Inequality Looks Like in Wales</span>
+          <span lang="cy">Sut Mae Anghydraddoldeb yn Edrych yng Nghymru</span>
+        </h1>
+        <p class="page-header__subtitle">
+          <span lang="en">Understanding the different types of inequality that affect people's lives</span>
+          <span lang="cy">Deall y gwahanol fathau o anghydraddoldeb sy'n effeithio ar fywydau pobl</span>
+        </p>
+      </div>
+    </section>
+
+    <!-- Types of Inequality -->
+    <section class="section">
+      <div class="container">
+        <div class="cards-grid">
+          <!-- Money Inequality -->
+          <div class="card">
+            <div class="card__icon card__icon--primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+              </svg>
+            </div>
+            <h3 class="card__title">
+              <span lang="en">Money Inequality</span>
+              <span lang="cy">Anghydraddoldeb Ariannol</span>
+            </h3>
+            <ul class="content-block__list">
+              <li lang="en">Some families struggle to pay for basics</li>
+              <li lang="cy">Mae rhai teuluoedd yn cael trafferth talu am bethau sylfaenol</li>
+              <li lang="en">Wages don't always cover living costs</li>
+              <li lang="cy">Nid yw cyflogau bob amser yn talu costau byw</li>
+              <li lang="en">Some jobs don't pay enough to live on</li>
+              <li lang="cy">Nid yw rhai swyddi'n talu digon i fyw arno</li>
+            </ul>
+          </div>
+
+          <!-- Education Inequality -->
+          <div class="card">
+            <div class="card__icon card__icon--secondary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>
+              </svg>
+            </div>
+            <h3 class="card__title">
+              <span lang="en">Education Inequality</span>
+              <span lang="cy">Anghydraddoldeb Addysgol</span>
+            </h3>
+            <ul class="content-block__list">
+              <li lang="en">Some schools have better resources than others</li>
+              <li lang="cy">Mae gan rai ysgolion adnoddau gwell nag eraill</li>
+              <li lang="en">University costs stop some students</li>
+              <li lang="cy">Mae costau prifysgol yn atal rhai myfyrwyr</li>
+              <li lang="en">Not everyone has computers for homework</li>
+              <li lang="cy">Nid oes gan bawb gyfrifiaduron ar gyfer gwaith cartref</li>
+            </ul>
+          </div>
+
+          <!-- Health Inequality -->
+          <div class="card">
+            <div class="card__icon card__icon--primary">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+              </svg>
+            </div>
+            <h3 class="card__title">
+              <span lang="en">Health Inequality</span>
+              <span lang="cy">Anghydraddoldeb Iechyd</span>
+            </h3>
+            <ul class="content-block__list">
+              <li lang="en">Some areas have fewer doctors</li>
+              <li lang="cy">Mae gan rai ardaloedd lai o feddygon</li>
+              <li lang="en">Mental health help can be hard to get</li>
+              <li lang="cy">Gall fod yn anodd cael cymorth iechyd meddwl</li>
+              <li lang="en">Healthy food costs more</li>
+              <li lang="cy">Mae bwyd iach yn costio mwy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Facts -->
+    <section class="section section--gray">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">
+            <span lang="en">Key Facts</span>
+            <span lang="cy">Ffeithiau Allweddol</span>
+          </h2>
+        </div>
+        <ul class="facts-list">
+          <li class="facts-list__item">
+            <svg class="facts-list__icon svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 2.1l4 4-4 4"/><path d="M3 12.2v-2a4 4 0 0 1 4-4h12.8"/><path d="M7 21.9l-4-4 4-4"/><path d="M21 11.8v2a4 4 0 0 1-4 4H4.2"/>
+            </svg>
+            <span class="facts-list__text">
+              <span lang="en">Poor children often stay poor as adults - the cycle of poverty can be hard to break</span>
+              <span lang="cy">Mae plant tlawd yn aml yn aros yn dlawd fel oedolion - gall cylch tlodi fod yn anodd ei dorri</span>
+            </span>
+          </li>
+          <li class="facts-list__item">
+            <svg class="facts-list__icon svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span class="facts-list__text">
+              <span lang="en">Where you live affects your opportunities - your postcode can determine your future</span>
+              <span lang="cy">Mae lle rydych chi'n byw yn effeithio ar eich cyfleoedd - gall eich cod post bennu eich dyfodol</span>
+            </span>
+          </li>
+          <li class="facts-list__item">
+            <svg class="facts-list__icon svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="4" r="2"/><path d="M12 6v6"/><path d="M12 12h4l2 6"/><path d="M5 12a5 5 0 1 0 8 4"/><path d="M18 18h2"/>
+            </svg>
+            <span class="facts-list__text">
+              <span lang="en">Disability makes poverty more likely - disabled people face extra barriers and costs</span>
+              <span lang="cy">Mae anabledd yn gwneud tlodi'n fwy tebygol - mae pobl anabl yn wynebu rhwystrau a chostau ychwanegol</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section">
+      <div class="container text-center">
+        <h2 class="section__title">
+          <span lang="en">Want to Learn More?</span>
+          <span lang="cy">Eisiau Dysgu Mwy?</span>
+        </h2>
+        <p class="section__subtitle mb-8">
+          <span lang="en">Explore the research behind these facts</span>
+          <span lang="cy">Archwiliwch yr ymchwil y tu ol i'r ffeithiau hyn</span>
+        </p>
+        <a href="research.html" class="btn btn--primary btn--large">
+          <span lang="en">View Research</span>
+          <span lang="cy">Gweld Ymchwil</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand"><span lang="en">The Wales Gap</span><span lang="cy">Bwlch Cymru</span></div>
+          <p class="footer__desc"><span lang="en">Understanding inequality and its effects on young people in Wales.</span><span lang="cy">Deall anghydraddoldeb a'i effeithiau ar bobl ifanc yng Nghymru.</span></p>
+        </div>
+        <div>
+          <h4 class="footer__title"><span lang="en">Pages</span><span lang="cy">Tudalennau</span></h4>
+          <ul class="footer__links">
+            <li><a href="problem.html" class="footer__link"><span lang="en">The Problem</span><span lang="cy">Y Broblem</span></a></li>
+            <li><a href="research.html" class="footer__link"><span lang="en">Research</span><span lang="cy">Ymchwil</span></a></li>
+            <li><a href="local-impact.html" class="footer__link"><span lang="en">Local Impact</span><span lang="cy">Effaith Leol</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title"><span lang="en">Get Involved</span><span lang="cy">Cymryd Rhan</span></h4>
+          <ul class="footer__links">
+            <li><a href="take-action.html" class="footer__link"><span lang="en">Take Action</span><span lang="cy">Gweithredu</span></a></li>
+            <li><a href="resources.html" class="footer__link"><span lang="en">Resources</span><span lang="cy">Adnoddau</span></a></li>
+            <li><a href="quiz.html" class="footer__link"><span lang="en">Quiz</span><span lang="cy">Cwis</span></a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer__title"><span lang="en">Contact</span><span lang="cy">Cyswllt</span></h4>
+          <ul class="footer__links">
+            <li><a href="mailto:thewalesgap@gmail.com" class="footer__link">thewalesgap@gmail.com</a></li>
+            <li><a href="tel:02920220309" class="footer__link">02920 220309</a></li>
+            <li><a href="https://www.srcdc.org.uk/" class="footer__link" target="_blank" rel="noopener">SRCDC Website</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2024 The Wales Gap. <span lang="en">All rights reserved.</span><span lang="cy">Cedwir pob hawl.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
